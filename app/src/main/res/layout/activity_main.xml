@@ -16,4 +16,10 @@
         android:text="二级联动菜单，title支持点击"
         android:onClick="toLinkList" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="渐变刻度盘，进度动画"
+        android:onClick="toDialsView" />
+
 </LinearLayout>

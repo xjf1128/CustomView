@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleProgressView">
+        <attr name="barBackground" format="color"/>
+        <attr name="barStartColor" format="color"/>
+        <attr name="barEndColor" format="color"/>
+        <attr name="numColor" format="color"/>
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+</resources>
