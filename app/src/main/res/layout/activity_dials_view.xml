@@ -16,8 +16,8 @@
         android:text="显示动画"
         android:onClick="showDpv"/>
 
-    <xujf.demo.example.customview.dials_view.CircleProgressView
-        android:id="@+id/cpv"
+    <xujf.demo.example.customview.dials_view.RingProgressView
+        android:id="@+id/rpv"
         android:layout_width="200dp"
         android:layout_height="200dp"
         app:barBackground="#a5a5a5"

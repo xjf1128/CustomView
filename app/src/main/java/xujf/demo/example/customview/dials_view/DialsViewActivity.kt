@@ -15,6 +15,6 @@ class DialsViewActivity : AppCompatActivity() {
 
     fun showDpv(v: View) {
         dpv.setScore(120f,60f)
-        cpv.setScore(120f,60f, "继续努力")
+        rpv.setScore(120f,60f, "继续努力")
     }
 }

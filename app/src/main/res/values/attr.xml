@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="CircleProgressView">
+    <declare-styleable name="RingProgressView">
         <attr name="barBackground" format="color"/>
         <attr name="barStartColor" format="color"/>
         <attr name="barEndColor" format="color"/>

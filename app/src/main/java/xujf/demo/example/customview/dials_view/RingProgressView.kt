@@ -21,7 +21,7 @@ import xujf.demo.example.customview.R
  * setScore(int max, int current)
  */
 
-class CircleProgressView: View {
+class RingProgressView: View {
     private var radius = 0f
     private var sWith = 0f
     private val mCount = 80
