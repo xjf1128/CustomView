@@ -128,6 +128,27 @@ class CircleProgressView: View {
         rect.set(centerX - radius, centerY - radius, centerX + radius, centerY + radius)
         canvas.drawArc(rect, initAng, angle, false, paint)
 
+        // 环形文字
+        val strs = ArrayList<String>()
+        strs.add("")
+        strs.add("继续努力")
+        strs.add("")
+        strs.add("合格")
+        strs.add("良好")
+        strs.add("优秀")
+
+        val spaceAngle = angle / strs.size
+        val rectText = RectF(centerX - radius + sWith * 3/2, centerY - radius + sWith* 3/2, centerX + radius - sWith* 3/2, centerY + radius - sWith* 3/2)
+        paint.style = Paint.Style.FILL
+        paint.textSize = sWith * 2 / 3
+        for (i in 0 until strs.size) {
+            val path = Path()
+            path.addArc(rectText, initAng + spaceAngle * i, spaceAngle)
+            //沿着路径绘制字符串
+            canvas.drawTextOnPath(strs[i], path, 0f, 0f, paint)
+        }
+        canvas.save()
+
         //进度条
         val colors = intArrayOf(barStartColor, barEndColor)
         val shader = LinearGradient(0f, centerY, width.toFloat(), centerY, colors, null, Shader.TileMode.CLAMP)
@@ -146,7 +167,7 @@ class CircleProgressView: View {
         //        canvas.drawLine(centerX-radius/2,centerY,centerX,centerY,paint);
         //        canvas.restore();
 
-        //下方文字
+        //分数文字
         paint.shader = null
 
         paint.style = Paint.Style.FILL
