@@ -58,12 +58,12 @@ class RingProgressView: View {
     }
 
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int): super(context, attrs, defStyleAttr) {
-        val array = context.obtainStyledAttributes(attrs, R.styleable.CircleProgressView)
-        barBackGround = array.getColor(R.styleable.CircleProgressView_barBackground, Color.GRAY)
-        barStartColor = array.getColor(R.styleable.CircleProgressView_barStartColor, Color.RED)
-        barEndColor = array.getColor(R.styleable.CircleProgressView_barEndColor, Color.GREEN)
-        numColor = array.getColor(R.styleable.CircleProgressView_numColor, Color.RED)
-        textColor = array.getColor(R.styleable.CircleProgressView_textColor, Color.GRAY)
+        val array = context.obtainStyledAttributes(attrs, R.styleable.RingProgressView)
+        barBackGround = array.getColor(R.styleable.RingProgressView_barBackground, Color.GRAY)
+        barStartColor = array.getColor(R.styleable.RingProgressView_barStartColor, Color.RED)
+        barEndColor = array.getColor(R.styleable.RingProgressView_barEndColor, Color.GREEN)
+        numColor = array.getColor(R.styleable.RingProgressView_numColor, Color.RED)
+        textColor = array.getColor(R.styleable.RingProgressView_textColor, Color.GRAY)
         array.recycle()
     }
 
